@@ -146,9 +146,35 @@ EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA">xuhuan2016@qq.com</spa
                 <hr>
                 <ul class="experience-list">
 					<li>
-                        <h3 contenteditable="true">1．车商部理赔管家系统</h3>
-                        <p contenteditable="true">开发周期<span style="white-space:pre">	</span>2020/9—2021/2<br>技术选型<span style="white-space:pre">	</span>SpringBoot、SpringCloud、MyBatis、Mysql、Nginx、Redis等<br>
+                        <h3 contenteditable="true">1 . ERP云货代系统（UFMS）</h3>
+                        <p contenteditable="true">开发周期<span style="white-space:pre">	</span>2016/6—2020/7<br>技术选型<span style="white-space:pre">	</span>SpringBoot、SpringCloud、MyBatis、JPA、Mysql 、RabbitMQ、Redis、PostgreSQL、Quartz、Druid<br>
 						<h3>项目描述：</h3></span><div><span style="display: inline !important; font-size: 15px;"><font face="宋体">&nbsp; 云货代系统是针对货代行业所持有的业务规范和管理流程使用BS架构开发出来的能够对货代行业的操作层、管理层提供有效管理和帮助的管理系统。</font></span>
+													<h4>主要功能模块：</h4>
+													1．	业务模块：包括国际、国内运输业务，海运、空运、陆运、快递、仓储等。满足销售、市场商务、操作文件管理，主要模块有运价中心、销售中心、业务中心、仓储管理、人事行政、客户管理、档案管理等，企业所有部门之间协调办公，提供全方位服务;
+													<br>2．	财务管理：总部与分公司财务往来，用于跨公司、跨地域、多币值的系统，可自动处理分公司往来、管理发票、账单、应收应付账款、明细账等;
+													<br>3．	工作流引擎：主要解决多个参与者之间按照预定义的规则或者任务的过程自动进行，从而实现预期的业务目标，包括流程设计、待办、已办、实例管理，任务管理等;
+													<br>4．	系统管理：用于设置所有的系统相关的基础设置和权限设置，主要包括人员管理、分公司管理、权限管理、系统设置等模块;
+													<br>5．	报表系统：同于统计所有业务和财务相关的报表，主要包括应收应付统计、利润统计、箱量统计、收付款统计、单量统计等;<div>
+						<h3>项目技术：</h3></span></div>
+						<div>1.系统采用7层架构设计:Web层、控制转发层、DTO层、服务层、DAO层、持久化层和数据库层;</div>
+						<div>2．使用Eureka做服务的发现和注册，使用Feign实现服务间的调用，使用Ribben实现负载均衡，使用Hystrix实现服务的熔断和降级，通过Zuul实现路由和网关;</div>
+						<div>3．使用RabbitMQ对负责的业务进行解耦和消峰;</div>
+						<div>4.使用Druid连接池，监控系统的同时不影响性能，还可以自动防止SQL注入;</div>
+						<div>4．使用Redis保存session’做单点登录和缓存数据;</div>
+						<div>5． 使用Spring的核心技术IOC可以很好的控制bean的生命周期以及各种服务的注入关系;Sping AOP的切面编程来对用户进行权限控制;</div>
+						<div>6．用Quartz定时对任务自动调度、自动发送邮件等;</div>
+						<div>7．对经常修改的业务使用Postgresql存储过程来实现，这样快速实现功能的同时可以取消重启服务器的过程，使用表触发器机制来实现部分数据的一致性和同步性;</div>
+						<div>8．用ECharts进行动态图表展示，使用快逸报表模板和Postgresql自定义函数可根据参数快速返回结果集进行表格数据展示，导出PDF、Excel等;<br>
+						<div>9．用Svn进行代码版本控制;<br>
+						<h3>责任描述：</h3></span><div>参与系统部分需求的分析和部分文档的编写</div><div>负责数据库建模以及sql编写和优化</div><div>前后端代码的编写</div><div>负责项目代码优化和维护</div></div>
+                        </div></p>
+						<span class="item-remove" style="visibility: visible;"><i class="iconfont icon-delete"></i></span>
+					</li>
+					
+					<li>
+                        <h3 contenteditable="true">2．车商部理赔管家系统</h3>
+                        <p contenteditable="true">开发周期<span style="white-space:pre">	</span>2020/9—2021/2<br>技术选型<span style="white-space:pre">	</span>SpringBoot、SpringCloud、MyBatis、Mysql、Nginx、Redis等<br>
+						<h3>项目描述：</h3></span><div>
 													<h4>主要功能模块：</h4>
 													1．	客户发起理赔后自动拉客户和查看原进群，发确认理赔等确认信息， 
 													<br>2．	客户回复后自动自动通知所有的负责人员，包括微信通知，短信通知等，并且可以直接回复客户的消息
@@ -174,31 +200,7 @@ EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA">xuhuan2016@qq.com</spa
                         </p>
 						<span class="item-remove" style="visibility: visible;"><i class="iconfont icon-delete"></i></span>
 					</li>
-                    <li>
-                        <h3 contenteditable="true">2 . ERP云货代系统（UFMS）</h3>
-                        <p contenteditable="true">开发周期<span style="white-space:pre">	</span>2016/6—2020/7<br>技术选型<span style="white-space:pre">	</span>SpringBoot、SpringCloud、MyBatis、JPA、Mysql 、RabbitMQ、Redis、PostgreSQL、Quartz、Druid<br>
-						<h3>项目描述：</h3></span><div><span style="display: inline !important; font-size: 15px;"><font face="宋体">&nbsp; 云货代系统是针对货代行业所持有的业务规范和管理流程使用BS架构开发出来的能够对货代行业的操作层、管理层提供有效管理和帮助的管理系统。</font></span>
-													<h4>主要功能模块：</h4>
-													1．	业务模块：包括国际、国内运输业务，海运、空运、陆运、快递、仓储等。满足销售、市场商务、操作文件管理，主要模块有运价中心、销售中心、业务中心、仓储管理、人事行政、客户管理、档案管理等，企业所有部门之间协调办公，提供全方位服务;
-													<br>2．	财务管理：总部与分公司财务往来，用于跨公司、跨地域、多币值的系统，可自动处理分公司往来、管理发票、账单、应收应付账款、明细账等;
-													<br>3．	工作流引擎：主要解决多个参与者之间按照预定义的规则或者任务的过程自动进行，从而实现预期的业务目标，包括流程设计、待办、已办、实例管理，任务管理等;
-													<br>4．	系统管理：用于设置所有的系统相关的基础设置和权限设置，主要包括人员管理、分公司管理、权限管理、系统设置等模块;
-													<br>5．	报表系统：同于统计所有业务和财务相关的报表，主要包括应收应付统计、利润统计、箱量统计、收付款统计、单量统计等;<div>
-						<h3>项目技术：</h3></span></div>
-						<div>1.系统采用7层架构设计:Web层、控制转发层、DTO层、服务层、DAO层、持久化层和数据库层;</div>
-						<div>2．使用Eureka做服务的发现和注册，使用Feign实现服务间的调用，使用Ribben实现负载均衡，使用Hystrix实现服务的熔断和降级，通过Zuul实现路由和网关;</div>
-						<div>3．使用RabbitMQ对负责的业务进行解耦和消峰;</div>
-						<div>4.使用Druid连接池，监控系统的同时不影响性能，还可以自动防止SQL注入;</div>
-						<div>4．使用Redis保存session’做单点登录和缓存数据;</div>
-						<div>5． 使用Spring的核心技术IOC可以很好的控制bean的生命周期以及各种服务的注入关系;Sping AOP的切面编程来对用户进行权限控制;</div>
-						<div>6．用Quartz定时对任务自动调度、自动发送邮件等;</div>
-						<div>7．对经常修改的业务使用Postgresql存储过程来实现，这样快速实现功能的同时可以取消重启服务器的过程，使用表触发器机制来实现部分数据的一致性和同步性;</div>
-						<div>8．用ECharts进行动态图表展示，使用快逸报表模板和Postgresql自定义函数可根据参数快速返回结果集进行表格数据展示，导出PDF、Excel等;<br>
-						<div>9．用Svn进行代码版本控制;<br>
-						<h3>责任描述：</h3></span><div>参与系统部分需求的分析和部分文档的编写</div><div>负责数据库建模以及sql编写和优化</div><div>前后端代码的编写</div><div>负责项目代码优化和维护</div></div>
-                        </div></p>
-						<span class="item-remove" style="visibility: visible;"><i class="iconfont icon-delete"></i></span>
-					</li>
+                    
                     
                     
                     <li>
